@@ -18,9 +18,22 @@
             color: #ff5555;
             text-align: center;
         }
+        #funny-img {
+            display: none; /* 預設隱藏 */
+            margin-top: 20px;
+            width: 150px; /* 調整圖片大小 */
+        }
     </style>
 </head>
 <body>
     <h1>感謝配合 愚人節快樂~!!</h1>
+    <img id="funny-img" src="1743480003706.jpg" alt="可愛貓貓">
+
+    <script>
+        // 2 秒後顯示圖片
+        setTimeout(function() {
+            document.getElementById("funny-img").style.display = "block";
+        }, 2000);
+    </script>
 </body>
 </html>
